@@ -1,0 +1,165 @@
+
+ 
+.services {
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 350px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 50px;
+  color: #016630;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #3b905e;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+
+  text-align: left;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ .text_lg{
+  margin-top: 15px;
+  color: #20b269;
+  font-size: 20px;
+  text-align: center;
+   letter-spacing: 2px;
+ }
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12), /* bigger soft shadow */
+              0 4px 6px rgba(0, 0, 0, 0.08);  /* subtle secondary shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18), 
+              0 6px 10px rgba(0, 0, 0, 0.12);
+}
+
+
+.service-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.service-content {
+  padding: 20px;
+}
+
+.icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.service-content h3 {
+  font-size: 20px;
+ 
+  color: #016630;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+
+  margin-bottom: 10px;
+}
+
+.service-content p {
+ 
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2b8a3e;
+    font-style: italic;
+ 
+  margin-bottom: 15px;
+}
+
+.service-content ul {
+  list-style: none;
+ 
+ 
+  padding: 0;
+}
+
+.service-content li {
+  color: #2b8a3e;
+  font-size: 20px;
+ align-items: center;
+ text-align: left;
+  margin-bottom: 5px;
+}
+
+/* ===================
+   MOBILE RESPONSIVE
+   =================== */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .logo {
+    width: 250px;
+  }
+
+  .services-grid {
+    gap: 20px;
+  }
+
+  .service-card img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .service-content h3 {
+    font-size: 18px;
+  }
+
+  .service-content p,
+  .service-content li {
+    font-size: 13px;
+  }
+}

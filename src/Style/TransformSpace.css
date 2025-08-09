@@ -1,0 +1,73 @@
+/* TransformSpace.css */
+
+.transform-space {
+    background-color: #e0f7f0; /* Very light green background */
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+ 
+    border-radius: 12px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #2e7d32; /* Dark green */
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #4caf50; /* Medium light green */
+    margin-bottom: 20px;
+  }
+  
+  .get-started-btn {
+    background-color: #2e7d32; /* Green button */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .get-started-btn:hover {
+    background-color: #228b22; /* Slightly darker green on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .subtitle {
+      font-size: 1rem;
+    }
+  
+    .get-started-btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .transform-space {
+      padding: 20px 10px;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .subtitle {
+      font-size: 0.9rem;
+    }
+  
+    .get-started-btn {
+      padding: 8px 15px;
+      font-size: 0.85rem;
+    }
+  }
