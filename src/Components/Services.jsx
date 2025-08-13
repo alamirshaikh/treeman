@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "../Style/Services.css";
 import landscapeImg from "../assets/landscaping.jpg";
 import ecofriendlyImg from "../assets/eco-friendly.jpg";
+import { Link } from 'react-router-dom'
 import commercialImg from "../assets/commercial.jpg";
 import maintenanceImg from "../assets/maintenance.jpg";
 import hardscapingImg from "../assets/hardscaping.jpg";
@@ -103,7 +104,7 @@ const Services = () => {
                   <li key={item} className="card__item">{item}</li>
                 ))}
               </ul>
-              <a href="#" className="card__cta">Learn More</a>
+              <Link to="/contact" className="card__cta">Learn More</Link>
             </article>
           ))}
         </div>

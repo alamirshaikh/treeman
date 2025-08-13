@@ -91,7 +91,7 @@ const ServicesComponet = () => {
                     <li key={item} className="card__item">{item}</li>
                   ))}
                 </ul>
-                <a href="#" className="card__cta">Learn More</a>
+                <a href="/contact" className="card__cta">Learn More</a>
               </div>
             </article>
           ))}

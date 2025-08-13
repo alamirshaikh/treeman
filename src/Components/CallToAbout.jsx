@@ -1,7 +1,13 @@
 import React from "react";
 import "../Style/CallToAction.css";
+import { useNavigate } from "react-router-dom";
 
 export default function CallToAbout() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/contact"); // replace with your target route
+  };
   return (
     <section className="cta-section">
       <div className="cta-card">
@@ -9,7 +15,7 @@ export default function CallToAbout() {
         <p>
         Experience the Treeman difference. Contact us today for a consultation.
         </p>
-        <button className="cta-btn">Get Started</button>
+        <button onClick={handleClick} className="cta-btn">Get Started</button>
       </div>
     </section>
   );

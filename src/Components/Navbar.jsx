@@ -24,7 +24,7 @@ const Navbar = () => {
         {/* Right Section */}
         <div className="right-section">
           <span className="phone">📞 +91 773-800-4023</span>
-          <a href="#quote" className="quote-btn">Free Quote</a>
+          <a href="/contact" className="quote-btn">Free Quote</a>
         </div>
 
         {/* Hamburger Menu */}

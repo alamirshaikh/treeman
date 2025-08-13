@@ -53,10 +53,10 @@ const HeroSection = () => {
 
         {/* Buttons */}
         <div className="hero-buttons">
-          <a href="#quote" className="btn primary">
+          <a href="/contact" className="btn primary">
             Get Free Quote →
           </a>
-          <a href="#services" className="btn secondary">
+          <a href="/services" className="btn secondary">
             View Services
           </a>
         </div>
