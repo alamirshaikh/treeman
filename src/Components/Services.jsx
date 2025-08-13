@@ -78,7 +78,7 @@ const chunkArray = (array, size) => {
 
 const Services = () => {
   const [currentPage, setCurrentPage] = useState(0);
-  const chunks = chunkArray(services, 4);
+  const chunks = chunkArray(services, 3);
 
   return (
     <section className="services">

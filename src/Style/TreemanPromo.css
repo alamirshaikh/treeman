@@ -1,174 +1,151 @@
-/* WhyChooseUs.css */
-
 .why-choose-us {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #ffffff;
-    font-family: Arial, sans-serif;
-  }
-  
-  .title {
-    font-size: 36px;
-    color: #4caf50; /* Changed to green */
-    margin-bottom: 10px;
-  }
-  
-  .subtitle {
-    font-size: 16px;
-    color: #666;
-    max-width: 800px;
-    margin: 0 auto 40px;
-  }
-  
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 700;
+  color: #14532d;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: clamp(14px, 2vw, 18px);
+  color: #555;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Row Layout */
+.content-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+/* Left Box */
+.philosophy-box {
+  flex: 1 1 350px;
+  background: #f9fafb;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.philosophy-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.philosophy-text {
+  padding: 20px;
+  text-align: left;
+}
+
+.philosophy-text h3 {
+  font-size: 20px;
+  color: #14532d;
+  margin-bottom: 10px;
+}
+
+.philosophy-text p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Right Cards */
+.cards-column {
+  flex: 1 1 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card_ {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card_:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.card-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.card_ h3 {
+  font-size: 18px;
+  color: #14532d;
+  margin-bottom: 8px;
+}
+
+.card_ p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Stats Section */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.stat {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.stat-circle {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  background: #16a34a;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.stat p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
   .content-row {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .philosophy-box {
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 40%;
-    text-align: left;
-    position: relative; /* Added for overlay */
-  }
-  
-  .philosophy-image {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .philosophy-text {
-    position: absolute; /* Position over image */
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(232, 245, 233, 0.8); /* Light green semi-transparent */
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  .philosophy-text h3 {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .philosophy-text p {
-    font-size: 14px;
-    color: #666;
-    font-style: italic;
-  }
-  
-  .cards-column {
-    display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 40%;
+    align-items: center;
   }
-  
-  .card_ {
-    background-color: #e8f5e9;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: left;
-  }
-  
-  .card-icon {
-    font-size: 24px;
-    color: #4caf50;
-    margin-bottom: 10px;
-  }
-  
-  .card_ h3 {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .card_ p {
-    font-size: 14px;
-    color: #666;
-  }
-  
-  .stats-row {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 40px;
-  }
-  
-  .stat {
+  .philosophy-text, .card_ {
     text-align: center;
   }
+}
   
-  .stat-circle {
-    background-color: #c8e6c9;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .stat p {
-    font-size: 14px;
-    color: #666;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 1024px) {
-    .content-row {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .philosophy-box,
-    .cards-column {
-      width: 80%;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .stats-row {
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-  
-    .stat {
-      width: 45%;
-    }
-  
-    .philosophy-box,
-    .cards-column {
-      width: 100%;
-    }
-  
-    .title {
-      font-size: 28px;
-    }
-  
-    .subtitle {
-      font-size: 14px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .stats-row {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .stat {
-      width: 100%;
-    }
-  }

@@ -1,5 +1,5 @@
-import React from 'react';
-import "../Style/TreemanPromo.css"; // Assuming you'll create a separate CSS file
+import React from "react";
+import "../Style/TreemanPromo.css";
 
 const TreemanPromo = () => {
   return (
@@ -7,10 +7,12 @@ const TreemanPromo = () => {
       <h1 className="title">Why Choose Us</h1>
       <p className="subtitle">
         Treeman Services is a one-stop window, providing sustainable green spaces to
-        individuals and commercial property holders. We provide end to end solutions for
+        individuals and commercial property holders. We provide end-to-end solutions for
         all your plant care needs.
       </p>
+
       <div className="content-row">
+        {/* Left Column */}
         <div className="philosophy-box">
           <img
             src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae"
@@ -20,43 +22,43 @@ const TreemanPromo = () => {
           <div className="philosophy-text">
             <h3>Our Philosophy</h3>
             <p>
-              "The year 2022 saw the birth of Treeman. The motto was to
-              bringing the benefits of green makeovers, Tree services, and
-              delivering quality plants to greater heights. To every
-              doorstep as they say."
+              The year 2022 saw the birth of Treeman. Our motto is to bring the benefits
+              of green makeovers, tree services, and quality plants to every doorstep,
+              helping people embrace nature in their everyday lives.
             </p>
           </div>
         </div>
+
+        {/* Right Column */}
         <div className="cards-column">
           <div className="card_">
-            <div className="card-icon">★</div>
+            <div className="card-icon">🌱</div>
             <h3>Expert Care</h3>
             <p>
-              Your plants are as living as humans, and need a lot of love
-              and care. In the hands of our experts, your plants are safe
-              and will grow healthy.
+              Your plants are living beings and deserve love and care. Our experts ensure
+              they grow healthy and strong.
             </p>
           </div>
           <div className="card_">
             <div className="card-icon">🛠</div>
             <h3>Craftsmanship</h3>
             <p>
-              We at Treeman are proud to offer carefully designed
-              landscapes crafted to suit our commercial clients' preferences
-              while prioritizing sustainability.
+              We offer beautifully designed landscapes crafted to match our clients’
+              preferences while keeping sustainability in mind.
             </p>
           </div>
-          <div className="card">
+          <div className="card_">
             <div className="card-icon">😊</div>
             <h3>Customer Satisfaction</h3>
             <p>
-              We deliver satisfaction through our comprehensive range of
-              expert landscaping services, including both residential and
-              commercial landscaping.
+              We deliver happiness through our complete range of expert landscaping
+              services, both residential and commercial.
             </p>
           </div>
         </div>
       </div>
+
+      {/* Stats Row */}
       <div className="stats-row">
         <div className="stat">
           <div className="stat-circle">20+</div>
