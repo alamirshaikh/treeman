@@ -1,31 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Navbar from './Components/Navbar'
-import HeroSection from './Components/HeroSection'
-import ServicesSection from './Components/ServiceSection'
-import Services from './Components/Services'
-import TreemanPromo from './Components/TreemanPromo'
-import TipsAndTricks from './Components/TipsAndTricks'
-import TransformSpace from './Components/TransformSpace'
-import Footer from './Components/Footer'
+import { Routes, Route, Link } from 'react-router-dom'
+import Home from './Pages/Home'
+import Gallary from './Pages/Gallery'
+import About from './Pages/About'
+import ServicesNew from './Pages/ServicesNew'
+import Contact from './Pages/Contact'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
- <div>
-  <Navbar/>
-  <HeroSection/> 
-  <ServicesSection/>
-  <Services/>
-  <TreemanPromo/>
- <TipsAndTricks/>
- <TransformSpace/>
- <Footer/>
- </div>
-    </>
+    <div>
+ 
+
+      {/* Routing */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/gallery" element={<Gallary />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<ServicesNew />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </div>
   )
 }
 

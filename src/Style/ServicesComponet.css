@@ -1,0 +1,143 @@
+/* Grid layout */
+.services__grid {
+    display: grid;
+    gap: 28px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  @media (min-width: 768px) {
+    .services__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services__header h2 {
+      font-size: 1.6rem;
+    }
+    .services__header p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .services__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+
+  .services__header {
+    text-align: center;
+    max-width: 800px; /* keeps text line length nice */
+    margin: 0 auto 40px;
+    padding: 0 16px; /* side padding for mobile */
+  }
+  
+  .services__header h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #006400; /* dark green */
+    margin-bottom: 16px;
+  }
+  
+  .services__header p {
+    font-size: 1.1rem;
+    color: #006400; /* same green as title */
+    line-height: 1.6;
+  }
+  /* Card container */
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-height: 440px;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(16, 24, 40, 0.12);
+  }
+  
+  /* Image */
+  .card__image-wrapper {
+    height: 220px;
+    overflow: hidden;
+  }
+  
+  .card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Card content (title, description, list, button) */
+  .card__content {
+    padding: 20px 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card__title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0 0 10px;
+  }
+  
+  .card__description {
+    font-size: 1rem;
+    color: var(--muted);
+    margin-bottom: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Bullet list */
+  .card__list {
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+  }
+  
+  .card__item {
+    position: relative;
+    padding-left: 28px;
+    font-size: 1rem;
+    color: var(--text);
+  }
+  
+  .card__item::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  /* Button */
+  .card__cta {
+    margin-top: auto;
+    padding: 12px 18px;
+    font-size: 1rem;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+    transition: background 0.2s ease;
+    text-decoration: none;
+  }
+  
+  .card__cta:hover {
+    background: var(--primary-600);
+  }
+  

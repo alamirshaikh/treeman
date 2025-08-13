@@ -1,0 +1,81 @@
+/* AboutTreeman.css */
+
+/* General Section */
+.about-details {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 60px 20px;
+    background: #f5f9f7;
+  }
+
+  /* Core Values Section */
+  .core-values-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #276749;
+    margin-bottom: 40px;
+  }
+  
+  .core-values-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .core-value-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    text-align: center;
+    flex: 1 1 220px;
+    max-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .core-value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  }
+  
+  .core-value-card .icon {
+    font-size: 2.5rem;
+    color: #38a169;
+    margin-bottom: 15px;
+  }
+  
+  .core-value-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #276749;
+  }
+  
+  .core-value-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .vision-mission-container {
+      flex-direction: column;
+      gap: 25px;
+    }
+  
+
+    .vision-text-box {
+        padding: 1rem;
+        font-size: 0.9rem;
+      }
+    
+      .about-text p,
+      .founders-box p {
+        font-size: 0.9rem;
+      }
+    .core-values-container {
+      gap: 20px;
+    }
+  }
+  

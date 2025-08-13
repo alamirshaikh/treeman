@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import "../Style/Services.css";
+import React from 'react';
+import "../Style/ServicesComponet.css";
 import landscapeImg from "../assets/landscaping.jpg";
 import ecofriendlyImg from "../assets/eco-friendly.jpg";
 import commercialImg from "../assets/commercial.jpg";
@@ -68,57 +68,37 @@ const services = [
   },
 ];
 
-const chunkArray = (array, size) => {
-  const result = [];
-  for (let i = 0; i < array.length; i += size) {
-    result.push(array.slice(i, i + size));
-  }
-  return result;
-};
-
-const Services = () => {
-  const [currentPage, setCurrentPage] = useState(0);
-  const chunks = chunkArray(services, 4);
-
+const ServicesComponet = () => {
   return (
     <section className="services">
       <div className="services__container">
         <header className="services__header">
-          <h2>Our Services</h2>
-          <p>Comprehensive tree care solutions for every need.</p>
+          <h2>Our Professional Services</h2>
+          <p>Treeman Services offers a comprehensive range of landscaping solutions that cater to diverse client needs. Our expertise ensures that every space reflects the client's vision while prioritizing sustainability.</p>
         </header>
 
         <div className="services__grid">
-          {chunks[currentPage].map((service) => (
+          {services.map((service) => (
             <article key={service.key} className="card">
               <div className="card__image-wrapper">
                 <img src={service.image} alt={service.title} className="card__image" />
-                <div className="card__overlay">
-                  <h3>{service.title}</h3>
-                  <p>{service.description}</p>
-                </div>
               </div>
-              <ul className="card__list">
-                {service.items.map((item) => (
-                  <li key={item} className="card__item">{item}</li>
-                ))}
-              </ul>
-              <a href="#" className="card__cta">Learn More</a>
+              <div className="card__content">
+                <h3 className="card__title">{service.title}</h3>
+                <p className="card__description">{service.description}</p>
+                <ul className="card__list">
+                  {service.items.map((item) => (
+                    <li key={item} className="card__item">{item}</li>
+                  ))}
+                </ul>
+                <a href="#" className="card__cta">Learn More</a>
+              </div>
             </article>
           ))}
-        </div>
-
-        <div className="services__navigation">
-          {currentPage > 0 && (
-            <button onClick={() => setCurrentPage(currentPage - 1)}>← Previous</button>
-          )}
-          {currentPage < chunks.length - 1 && (
-            <button onClick={() => setCurrentPage(currentPage + 1)}>Next →</button>
-          )}
         </div>
       </div>
     </section>
   );
 };
 
-export default Services;
+export default ServicesComponet;

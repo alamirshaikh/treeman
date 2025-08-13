@@ -1,0 +1,112 @@
+.about-wrapper {
+    background: #f8fff8;
+    padding: 2rem 1rem;
+  }
+  
+  .about-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-family: 'Segoe UI', sans-serif;
+    max-width: 1140px; /* keeps it centered like Bootstrap container */
+    margin: 0 auto;
+    align-items: flex-start;
+  }
+  
+  /* Left column */
+  .about-left {
+    position: relative;
+    flex: 1 1 48%;
+  }
+  
+  .about-image {
+    width: 100%;
+    height: 420px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Vision & Mission overlay */
+  .vision-box {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 85%;
+  }
+  
+  .vision-box h4 {
+    color: #166534;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .vision-box p {
+    font-size: 1rem;
+    color: #166534;
+    line-height: 1.5;
+  }
+  
+  /* Right column */
+  .about-right {
+    flex: 1 1 48%;
+  }
+  
+  .about-right h2 {
+    font-size: 2rem;
+    color: #166534;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .about-right p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Founders box */
+  .founder-box {
+    background: #f0faef;
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+  
+  .founder-box h4 {
+    font-size: 1.2rem;
+    color: #166534;
+    margin-bottom: 0.5rem;
+  }
+  
+  .founder-box p {
+    font-size: 1rem;
+    color: #166534;
+    line-height: 1.5;
+  }
+  
+  /* Responsive */
+  @media (max-width: 992px) {
+    .about-container {
+      flex-direction: column;
+    }
+  
+    .about-left,
+    .about-right {
+      flex: 1 1 100%;
+    }
+  
+    .about-image {
+      height: auto;
+    }
+  
+    .vision-box {
+      position: static;
+      max-width: 100%;
+      margin-top: 1rem;
+    }
+  }
+  
