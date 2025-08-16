@@ -19,7 +19,10 @@ const Navbar = () => {
   <Link to="/gallery">Gallery</Link>
   <Link to="/about">About</Link>
   <Link to="/services">Services</Link>
+  <Link to="/products">Products</Link>
+
   <Link to="/contact">Contact</Link>
+  
 </nav>
         {/* Right Section */}
         <div className="right-section">

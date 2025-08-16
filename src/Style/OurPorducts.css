@@ -1,0 +1,166 @@
+.tips-and-tricks_our {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2f4f2f; /* dark green */
+  background-color: #f0fff0; /* very light green background */
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(46, 139, 87, 0.15); /* subtle green shadow */
+}
+
+.title_our {
+  font-size: 3rem;
+  font-weight: 700;
+ 
+  color: #228b22; /* forest green */
+  margin-bottom: 0.25em;
+}
+
+.subtitle_our {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  color: #4caf50; /* medium light green */
+  margin-bottom: 2em;
+  font-style: italic;
+}
+
+.cards-container_our {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card_x_our {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(34, 139, 34, 0.12);
+  width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: auto; /* Fixed to auto height */
+}
+
+.card_x_our:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(34, 139, 34, 0.3);
+}
+
+.card-image_our {
+  width: 100%;
+  object-fit: cover; /* Let it adjust naturally */
+}
+
+.card-content_x_our {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title_our {
+  font-size: 1.5rem;
+  color: #2e7d32; /* darker green */
+  margin-bottom: 0.5em;
+}
+
+.card-desc_our {
+  font-size: 1rem;
+  color: #4b6f44; /* muted green */
+  margin-bottom: 1em;
+  line-height: 1.4;
+  flex-grow: 1;
+}
+
+.card-tags_our {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-tags_our span {
+  background-color: #e0f2f1; /* light teal */
+  color: #2e7d32;
+  font-size: 0.85rem;
+  padding: 5px 12px;
+  border-radius: 20px;
+  user-select: none;
+  box-shadow: 0 2px 4px rgba(34, 139, 34, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.card-tags_our span:hover {
+  background-color: #a5d6a7; /* brighter green on hover */
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .cards-container_our {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card_x_our {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card_x_our {
+    width: 100%;
+  }
+
+  .title_our {
+    font-size: 2.5rem;
+  }
+
+  .subtitle_our {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tips-and-tricks_our {
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+
+  .title_our {
+    font-size: 2rem;
+  }
+
+  .subtitle_our {
+    font-size: 1rem;
+  }
+
+  .cards-container_our {
+    gap: 20px;
+  }
+
+  .card_x_our {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .card-title_our {
+    font-size: 1.2rem;
+  }
+
+  .card-desc_our {
+    font-size: 0.9rem;
+  }
+
+  .card-tags_our span {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+  }
+}
