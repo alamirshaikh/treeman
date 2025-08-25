@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section logo-section">
           <img src="./Images/logo.png" alt="TreeMan Logo" className="footer-logo" />
-          <p>Professional tree care and maintenance services in Mumbai and surrounding areas.</p>
+          <p>Horticulture Consultant I Landscape Design & Execution Experts.</p>
           <div className="social-icons">
             <a href="#"><i className="fab fa-facebook-f"></i></a>
             <a href="#"><i className="fab fa-instagram"></i></a>

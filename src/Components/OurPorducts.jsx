@@ -155,18 +155,18 @@ const products = [
 
 const OurPorducts = () => {
   return (
-    <section className="tips-and-tricks">
-      <h1 className="title">Our Products</h1>
-      <p className="subtitle">Explore our full planter collection</p>
+    <section className="tips-and-tricks_our">
+      <h1 className="title_our">Our Products</h1>
+      <p className="subtitle_our">Explore our full planter collection</p>
       
-      <div className="cards-container">
+      <div className="cards-container_our">
         {products.map((item, index) => (
-          <div key={index} className="card_x">
-            <img src={item.img} alt={item.alt} className="card-image" />
-            <div className="card-content_x">
-              <h3 className="card-title">{item.title}</h3>
-              <p className="card-desc">{item.desc}</p>
-              <div className="card-tags">
+          <div key={index} className="card_x_our">
+            <img src={item.img} alt={item.alt} className="card-image_our" />
+            <div className="card-content_x_our">
+              <h3 className="card-title_our">{item.title}</h3>
+              <p className="card-desc_our">{item.desc}</p>
+              <div className="card-tags_our">
                 {item.tags.map((tag, i) => (
                   <span key={i}>{tag}</span>
                 ))}

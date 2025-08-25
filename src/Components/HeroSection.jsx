@@ -34,11 +34,12 @@ const HeroSection = () => {
 
   return (
     <section className="hero container">
+      
       <div className="hero-content">
         {/* Tagline */}
         <div className="tagline">
           <span className="dot"></span>
-          Treeman Services - Your Trusted Tree Care Partner
+          Horticulture Consultant I Landscape Design & Execution Experts
         </div>
 
         {/* Main Heading */}
