@@ -7,6 +7,8 @@ import TreemanPromo from '../Components/TreemanPromo'
 import TipsAndTricks from '../Components/TipsAndTricks'
 import TransformSpace from '../Components/TransformSpace'
 import Footer from '../Components/Footer'
+import Clients from '../Components/Clients'
+import ProductsSlid from '../Components/ProductsSlid'
 
 const Home = () => {
     return (
@@ -15,6 +17,7 @@ const Home = () => {
 <Navbar/>
   <HeroSection/> 
   <ServicesSection/>
+ <ProductsSlid/>
   <Services/>
   <TreemanPromo/>
  <TipsAndTricks/>

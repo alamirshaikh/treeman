@@ -1,0 +1,139 @@
+/* 🌟 Clients Section Styling */
+.clients {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f0f0f0, #dceefb);
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+/* 🎨 Stylish Heading */
+.clients h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #0d6efd, #009688);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+/* 🌟 Underline Effect */
+.clients h2::after {
+  content: '';
+  width: 120px;
+  height: 5px;
+  background: #0d6efd;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 5px;
+}
+
+/* 🚀 Smooth Slider Container */
+.slider-container {
+  margin: 40px auto;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 95%;
+  backdrop-filter: blur(8px);
+}
+
+/* 🖼️ Product Card */
+.product-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 25px 15px;
+  margin: 0 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+}
+
+/* 🖼️ Product Image */
+.client-image {
+  max-width: 70%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  margin: 0 auto 15px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.client-image:hover {
+  transform: scale(1.07);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+  border: 2px solid #0d6efd;
+}
+
+/* 🏷️ Product Name */
+.product-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.product-card:hover .product-name {
+  color: #0d6efd;
+}
+
+/* 🚀 Ultra-Smooth Slide Transition */
+.slick-list {
+  transition: transform 0.8s ease-in-out !important;
+}
+
+.slick-slide {
+  transition: transform 0.8s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+/* 🌟 Responsive Adjustments */
+@media (max-width: 1200px) {
+  .client-image {
+    width: 80%;
+  }
+  .slider-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .clients h2 {
+    font-size: 3rem;
+  }
+  .product-name {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .clients h2 {
+    font-size: 2.5rem;
+  }
+  .client-image {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .clients h2 {
+    font-size: 2rem;
+  }
+  .product-name {
+    font-size: 0.9rem;
+  }
+}
