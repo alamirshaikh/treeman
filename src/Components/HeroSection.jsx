@@ -39,11 +39,11 @@ const HeroSection = () => {
         {/* Tagline */}
         <div className="tagline">
           <span className="dot"></span>
-          Horticulture Consultant I Landscape Design & Execution Experts
+          Treeman Services - Your Trusted Tree Care Partner
         </div>
 
         {/* Main Heading */}
-        <h1 className="section-titles">Mumbai's Premier Tree Care Specialists</h1>
+        <h1 className="section-titles">Horticulture Consultant I Landscape Design & Execution Experts</h1>
 
         {/* Description */}
         <p className="section-page">
